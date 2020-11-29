@@ -1,10 +1,225 @@
+/**
+ * 页面通用样式
+ */
+
+
+/* =================↓ 通用 ↓================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-  height: 100%;
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
+
+body {
+  position: relative;
+}
+
+
+/* =================↓ 基本元素 ↓================= */
+body {
+  img {
+    max-width: 100%;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+  }
+}
+
+
+/* =================↓ 加载动画 ↓================= */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fefefe;
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+
+  .status {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../images/preloader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin: -70px 0 0 -70px;
+  }
+}
+
+
+/* =================↓ 两种背景色 ↓================= */
+body {
+  .background-one {
+    background-color: #ffffff;
+  }
+
+  .background-two {
+    background-color: #f1f1f1;
+  }
+}
+
+
+/* =================↓ 排版布局 ↓================= */
+body {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  a, p, li, input, textarea {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #818181;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  }
+
+  a {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    outline: 0;
+    text-decoration: none;
+    border: 0;
+  }
+}
+
+
+/* =================↓ 图标 ↓================= */
+/* 横排的图标 */
+.clean-blurb-round-icon {
+  .clean-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0px auto 30px;
+    text-align: center;
+    border: 8px solid #dadada;
+    border-radius: 50%;
+    line-height: 0;
+    padding: 8px;
+    -webkit-transition: all .35s linear;
+    -moz-transition: all .35s linear;
+    -ms-transition: all .35s linear;
+    -o-transition: all .35s linear;
+    transition: all .35s linear;
+    i {
+      line-height: 70px;
+      font-size: 36px;
+      color: #dadada;
+    }
+  }
+  &:hover {
+    .clean-icon {
+      border: 1px solid rgba(0, 0, 0, 0);
+      i {
+        color: #ffffff;
+      }
+    }
+  }
+  h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #616161;
+    margin-top: 0;
+    margin-bottom: 15px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+  }
+  p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+/* 竖排的图标 */
+.clean-blurb-icon-only {
+  margin-bottom: 50px;
+  text-align: center;
+
+  i {
+    font-size: 30px;
+    border-radius: 50%;
+    border: 4px solid #eee;
+    padding: 30px;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  h3 {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/* 标题下面的横线 */
+.clean-line {
+  width: 100px;
+  height: 1px;
+  margin: 20px auto;
+}
+/* ============================================== */
