@@ -211,64 +211,7 @@
 /* ===================================
 	SECTIONS
 ====================================== */
-.clean-section-wrapper {
-    padding: 80px 0;
-    overflow: hidden;
-}
 
-.clean-section-header {
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-.clean-section-header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    color: #313131;
-}
-
-.clean-section-header h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    color: #313131;
-}
-
-.clean-section-header h1 span {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.clean-section-header p {
-    font-family: 'Raleway', sans-serif;
-}
-
-/* Parallax Section*/
-.clean-parallax-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.clean-section-header-parallax h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.clean-section-header-parallax h1 span {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.clean-section-header-parallax p {
-    font-family: 'Raleway', sans-serif;
-}
 
 
 /* ===================================
