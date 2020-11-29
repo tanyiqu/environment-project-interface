@@ -140,8 +140,6 @@
 ====================================== */
 
 
-
-
 /*.clean-icones {*/
 /*    overflow: hidden;*/
 /*    padding: 20px;*/
@@ -206,12 +204,36 @@
 /*}*/
 
 
-
-
 /* ===================================
 	SECTIONS
 ====================================== */
+/* Parallax Section*/
+/*.clean-parallax-overlay {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*}*/
 
+
+/*.clean-section-header-parallax {*/
+/*h1 {*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    font-weight: 700;*/
+/*    font-size: 30px;*/
+
+/*span {*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    font-weight: 700;*/
+/*    font-size: 30px;*/
+/*}*/
+/*}*/
+
+/*p {*/
+/*    font-family: 'Raleway', sans-serif;*/
+/*}*/
+/*}*/
 
 
 /* ===================================
@@ -570,188 +592,6 @@ header.clean-page-header .clean-main-menu.minified {
     margin-bottom: 0
 }
 
-
-/* ===================================
-	PRICING
-====================================== */
-.clean-pricing-section {
-    padding: 80px 0;
-}
-
-.clean-pricing-plans {
-    text-align: center;
-    padding: 30px 0;
-    background-color: #ffffff;
-}
-
-.clean-recommended-pricing {
-    background-color: #ffffff;
-}
-
-.recommended-titles {
-    padding: 15px 0;
-}
-
-.recommended-titles h2 {
-    color: #ffffff !important;
-}
-
-.clean-pricing-plans .recommended-titles p {
-    color: #ffffff !important;
-}
-
-.clean-pricing-plans .recommended-titles p span {
-    color: #ffffff !important;
-}
-
-.clean-pricing-plans .clean-pricing-titles {
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.clean-pricing-plans .clean-pricing-titles h2 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.clean-pricing-plans .clean-pricing-titles p {
-    font-size: 16px;
-}
-
-.clean-pricing-plans .clean-pricing-titles p span {
-    font-size: 30px;
-    font-weight: 300;
-}
-
-.clean-pricing-plans .clean-pricing-service-name {
-    margin-bottom: 20px;
-}
-
-.clean-pricing-plans ul li {
-    text-align: center;
-    padding: 10px 0;
-}
-
-.clean-pricing-plans ul li:last-child {
-    border-bottom: 0px solid;
-}
-
-.clean-pricing-plans a.clean-signup-btn {
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: #ffffff;
-    padding: 15px 30px;
-    text-align: center;
-    display: inline-block;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    -ms-transition: all .35s;
-    -o-transition: all .35s;
-    transition: all .35s;
-}
-
-.clean-pricing-plans a.clean-signup-btn:hover {
-    color: #ffffff;
-    background-color: #ff653d;
-}
-
-
-/* ===================================
-	CONTACT
-====================================== */
-#contact-form {
-    margin: 0 15%;
-}
-
-.clean-contact-section {
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
-    position: relative;
-    padding: 80px 0;
-    overflow: hidden;
-}
-
-.clean-contact-section .clean-contact-address p {
-    color: #ffffff;
-}
-
-.clean-contact-section .clean-contact-address ul li {
-    margin-bottom: 25px;
-    font-size: 14px;
-    position: relative;
-    padding: 15px;
-}
-
-.clean-contact-section .clean-contact-address ul li:last-child {
-    margin-bottom: 0;
-}
-
-.clean-contact-section .clean-contact-address ul li i {
-    font-size: 50px;
-    line-height: 55px;
-    color: #ffffff;
-}
-
-.clean-contact-section .clean-contact-form .clean-input-fields {
-    margin-bottom: 20px;
-}
-
-.clean-contact-section .clean-contact-form .clean-input-fields label {
-    display: block;
-    font-size: 14px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-
-.clean-contact-section .clean-contact-form .clean-input-fields input {
-    width: 100%;
-    height: 40px;
-    background-color: transparent;
-    border: 1px solid #999999;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.clean-contact-section .clean-contact-form .clean-input-fields textarea {
-    width: 100%;
-    background-color: transparent;
-    border: 1px solid #999999;
-    padding: 15px;
-}
-
-.clean-contact-section .clean-contact-form input[type='submit'] {
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: #ffffff;
-    padding: 15px 30px;
-    text-align: center;
-    display: inline-block;
-    outline: 0;
-    border: 0px solid;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    -ms-transition: all .35s;
-    -o-transition: all .35s;
-    transition: all .35s;
-}
-
-.clean-contact-section .clean-contact-form .clean-input-fields input[type='submit']:hover {
-    color: #ffffff;
-    background-color: #de5c39;
-}
 
 
 /* ===================================
