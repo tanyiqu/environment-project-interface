@@ -322,23 +322,21 @@ body a:active {
   font-family: 'Raleway', sans-serif;
 }
 /* =================↓ 环保新闻 ↓================= */
-#news .clean-member-img-wrapper img {
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-#news .clean-testimonial-wrapper {
+#news .news-list {
   text-align: center;
   position: relative;
   z-index: 5;
-}
-#news .new-list {
   overflow: hidden;
 }
-#news .new-list p {
+#news .news-list .news-item .news-img-wrapper img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+#news .news-list .news-item p {
   font-size: 16px;
   margin-bottom: 20px;
 }
-#news .new-list p.from {
+#news .news-list .news-item p.from {
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 0;
