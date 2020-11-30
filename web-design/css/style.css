@@ -321,6 +321,22 @@ body a:active {
 .clean-section-wrapper .clean-section-header p {
   font-family: 'Raleway', sans-serif;
 }
+/* =================↓ 环保视频 ↓================= */
+#video .video-div {
+  height: 359px;
+}
+#video .video-div iframe {
+  width: 100%;
+  height: 100%;
+}
+/* =================↓ 环保数据 ↓================= */
+#data .data-list .data-item {
+  padding: 0 35px 15px 35px;
+}
+#data .data-list .data-item div {
+  height: 350px;
+  background: #7CD552;
+}
 /* =================↓ footer ↓================= */
 footer {
   background-color: #28292e;

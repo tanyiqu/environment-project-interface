@@ -28,6 +28,18 @@
     <link rel="stylesheet" href="css/owl.theme.css">
     <script src="js/owl.carousel.min.js"></script>
 
+
+    <!-- 自己的css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhance.css">
+    <link rel="stylesheet" href="css/color-green.css" id="colors"/>
+
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <!-- 自己的js -->
+    <script src="js/custom.js"></script>
+
     <!-- ======================================================================= -->
 
 
@@ -39,10 +51,7 @@
 
 
     <!-- 页面css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css"/>
-    <link rel="stylesheet" href="css/color-green.css" id="colors"/>
 
 
     <script src="js/html5shiv.min.js"></script>
@@ -67,8 +76,6 @@
 
     <script src="js/jquery.nav.js"></script>
 
-
-    <script src="js/custom.js"></script>
 
 </head>
 
@@ -296,7 +303,8 @@
 
 
 <!-- 环保视频 -->
-<section id="video" class="clean-custom-sec clean-section-wrapper background-one">
+<section id="video" class="clean-section-wrapper background-one">
+    <!-- 标题 -->
     <div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">
         <h1><span class="clean-color-contras">环保视频</span></h1>
         <div class="clean-line"></div>
@@ -308,11 +316,12 @@
     <div class="container">
         <div class="row">
             <!-- 左侧 -->
-            <div class="col-md-8 col-sm-8 col-xs-12 clean-custom-sec-img wow bounceInLeft">
-                <img src="images/custom.jpg" alt="Custom Image">
+            <div class="video-div col-md-7 col-sm-7 col-xs-12  wow bounceInLeft">
+                <iframe id="videoFrame" src="//player.bilibili.com/player.html?aid=97352674&bvid=BV1j7411R7jc&cid=166156570&page=1"></iframe>
             </div>
+
             <!-- 右侧 -->
-            <div class="col-md-4 col-sm-4 col-xs-12 clean-custom-sec-text wow bounceInRight">
+            <div class="col-md-5 col-sm-5 col-xs-12 wow bounceInRight">
                 <h3>视频介绍</h3>
                 <p>这是一段介绍。</p>
                 <p>这是一段介绍。</p>
@@ -329,67 +338,28 @@
     <div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">
         <h1><span class="clean-color-contras">环保数据</span></h1>
         <div class="clean-line"></div>
-        <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
-            一行小字
-        </p>
     </div>
 
-    <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="clean-portfolio-work-slider-section wow fadeIn" data-wow-duration="2s">
-                <!-- 数据列表 -->
-                <div id="featured-work-slider" class="owl-carousel clean-portfolio-works-slider">
-                    <!-- 单个数据 -->
-                    <div class="clean-portfolio-work-item">
-                        <img src="images/featured-work/1.png" alt="Feature Work 1">
-                        <div class="clean-port-work-details">
-                            <ul class="clean-work-meta">
-                                <li class="clean-lighbox">
-                                    <a href="images/featured-work/1.png" class="clean-featured-work-img">
-                                        <i class="fa fa-cog"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+    <!-- 数据列表 -->
+    <div class="data-list wow fadeIn" data-wow-duration="2s">
+        <!-- 单个数据 -->
+        <div class="data-item col-md-6 col-sm-12 col-xs-12">
+            <div>
+                <p>里面放图表1</p>
+            </div>
+        </div>
 
-                    <!-- 单个数据 -->
-                    <div class="clean-portfolio-work-item">
-                        <img src="images/featured-work/1.png" alt="Feature Work 1">
-                        <div class="clean-port-work-details">
-                            <ul class="clean-work-meta">
-                                <li class="clean-lighbox">
-                                    <a href="images/featured-work/1.png" class="clean-featured-work-img">
-                                        <i class="fa fa-cog"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- 单个数据 -->
-                    <div class="clean-portfolio-work-item">
-                        <img src="images/featured-work/1.png" alt="Feature Work 1">
-                        <div class="clean-port-work-details">
-                            <ul class="clean-work-meta">
-                                <li class="clean-lighbox">
-                                    <a href="images/featured-work/1.png" class="clean-featured-work-img">
-                                        <i class="fa fa-cog"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="data-item col-md-6 col-sm-12 col-xs-12">
+            <div>
+                <p>里面放图表2</p>
             </div>
         </div>
     </div>
-
 </section>
 
 
 <!-- 环保小知识 -->
-<section id="knowledge" class="clean-section-wrapper clean-offer-section background-one">
+<section id="knowledge" class="clean-section-wrapper background-one">
     <!-- 标题 -->
     <div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">
         <h1><span class="clean-color-contras">环保小知识</span></h1>
