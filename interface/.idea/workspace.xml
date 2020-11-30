@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79972e95-aade-4fac-b2c9-68b2f72d4a3c" name="Default Changelist" comment="object">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/comments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/holiday.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/knowledge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/law.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/news.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/ucomment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/user.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/video.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring_mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="79972e95-aade-4fac-b2c9-68b2f72d4a3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/commentsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/holidayDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/knowledgeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/lawDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/newsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/ucommentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/userDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/videoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mapper/comments.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mapper/holiday.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mapper/knowledge.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mapper/law.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mapper/news.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mapper/ucomment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mapper/user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mapper/video.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="mapper" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -126,8 +128,16 @@
       <updated>1606722787124</updated>
       <workItem from="1606722790220" duration="40000" />
       <workItem from="1606723071009" duration="1261000" />
-      <workItem from="1606741627020" duration="1270000" />
+      <workItem from="1606741627020" duration="1773000" />
     </task>
+    <task id="LOCAL-00001" summary="object">
+      <created>1606742909565</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606742909565</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,10 +156,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1141" y="403" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1606742766749" />
-    <state x="998" y="194" key="CommitChangelistDialog2" timestamp="1606742867088">
+    <state x="998" y="194" key="CommitChangelistDialog2" timestamp="1606742908013">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="998" y="194" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1606742867088" />
+    <state x="998" y="194" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1606742908013" />
     <state width="1848" height="288" key="GridCell.Tab.0.bottom" timestamp="1606722830473">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
