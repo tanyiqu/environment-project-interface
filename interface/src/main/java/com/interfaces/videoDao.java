@@ -1,4 +1,4 @@
 package com.interfaces;
 
-public class videoDao {
+public interface videoDao {
 }

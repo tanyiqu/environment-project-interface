@@ -1,4 +1,4 @@
 package com.interfaces;
 
-public class userDao {
+public interface userDao {
 }
