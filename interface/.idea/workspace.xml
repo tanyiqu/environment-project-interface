@@ -1,11 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79972e95-aade-4fac-b2c9-68b2f72d4a3c" name="Default Changelist" comment="" />
+    <list default="true" id="79972e95-aade-4fac-b2c9-68b2f72d4a3c" name="Default Changelist" comment="object">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/comments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/holiday.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/knowledge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/law.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/news.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/ucomment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/user.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring_mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="interface" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\web-design\interface\.idea" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -22,15 +75,32 @@
     </option>
   </component>
   <component name="ProjectId" id="1l08jzrbO8qO2LjzAoFCLrepddE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\web-design\interface\src\main\resources" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -55,13 +125,31 @@
       <option name="presentableId" value="Default" />
       <updated>1606722787124</updated>
       <workItem from="1606722790220" duration="40000" />
+      <workItem from="1606723071009" duration="1261000" />
+      <workItem from="1606741627020" duration="1270000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="object" />
+    <option name="LAST_COMMIT_MESSAGE" value="object" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="759" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606723722792">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="759" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606723722792" />
+    <state x="1141" y="403" key="#com.intellij.ide.util.MemberChooser" timestamp="1606742766749">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1141" y="403" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1606742766749" />
+    <state x="998" y="194" key="CommitChangelistDialog2" timestamp="1606742867088">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="998" y="194" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1606742867088" />
     <state width="1848" height="288" key="GridCell.Tab.0.bottom" timestamp="1606722830473">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

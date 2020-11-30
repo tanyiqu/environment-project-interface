@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <environments default="online">
+        <environment id="local">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/web-design?serverTimezone=UTC"/>
+                <property name="username" value="kaiser"/>
+                <property name="password" value="111111"/>
+            </dataSource>
+        </environment>
+
+        <environment id="online">
+        <transactionManager type="JDBC"></transactionManager>
+        <dataSource type="POOLED">
+            <property name="driver" value="com.mysql.jdbc.Driver"/>
+            <property name="url" value="jdbc:mysql://8.131.77.175:3306/sx111?serverTimezone=UTC"/>
+            <property name="username" value="sx111"/>
+            <property name="password" value="S6tF4YcWfcKb254X"/>
+        </dataSource>
+    </environment>
+    </environments>
+
+    <!--指定sql映射文件的位置-->
+    <mappers>
+
+    </mappers>
+</configuration>
