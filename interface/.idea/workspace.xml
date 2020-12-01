@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79972e95-aade-4fac-b2c9-68b2f72d4a3c" name="Default Changelist" comment="controller">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/object/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/result/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/utils/myUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../analysis/世界环保日.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../analysis/世界环保日.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../analysis/环境保护日.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../analysis/知识.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../analysis/知识.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../analysis/网络接口文档.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../analysis/视频.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../analysis/视频.csv" afterDir="false" />
+    <list default="true" id="79972e95-aade-4fac-b2c9-68b2f72d4a3c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/lawCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/lawCon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/newsCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/newsCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/userCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/userCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interfaces/knowledgeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/knowledgeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interfaces/lawDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/lawDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interfaces/newsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/newsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interfaces/userDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/userDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/user.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring_mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring_mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/videoCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/videoCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/interfaces/videoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/videoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,14 +45,7 @@
         <item name="web-design@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="web-design: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="holiday: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="web-design@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="web-design: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="news: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="video: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -200,7 +176,7 @@
       <workItem from="1606723071009" duration="1261000" />
       <workItem from="1606741627020" duration="4265000" />
       <workItem from="1606796696795" duration="10722000" />
-      <workItem from="1606825431932" duration="5417000" />
+      <workItem from="1606825431932" duration="6690000" />
     </task>
     <task id="LOCAL-00001" summary="object">
       <created>1606742909565</created>
@@ -230,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606743656265</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2020-12-01">
+      <created>1606831118007</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606831118007</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +223,8 @@
     <MESSAGE value="object" />
     <MESSAGE value="Dao&amp;Mapper" />
     <MESSAGE value="controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="controller" />
+    <MESSAGE value="2020-12-01" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020-12-01" />
   </component>
   <component name="WindowStateProjectService">
     <state x="759" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606723722792">
@@ -251,10 +235,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1141" y="403" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1606804348091" />
-    <state x="998" y="194" key="CommitChangelistDialog2" timestamp="1606828645046">
+    <state x="998" y="194" key="CommitChangelistDialog2" timestamp="1606831116057">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="998" y="194" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1606828645046" />
+    <state x="998" y="194" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1606831116057" />
     <state x="1011" y="468" key="FileChooserDialogImpl" timestamp="1606814419072">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

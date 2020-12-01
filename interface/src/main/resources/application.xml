@@ -20,8 +20,8 @@
         <property name="password" value="111111"></property>
     </bean>
 
-    <bean name="sqlSessionFactory"
+    <!--<bean name="sqlSessionFactory"
           class="org.mybatis.spring.SqlSessinoFactroyBean">
 
-    </bean>
+    </bean>-->
 </beans>

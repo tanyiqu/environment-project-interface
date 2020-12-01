@@ -71,5 +71,5 @@ public class newsCon {
         session.close();
         return result;
     }
-    
+
 }
