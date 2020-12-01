@@ -404,35 +404,33 @@ body {
 
 /* =================↓ 环保新闻 ↓================= */
 #news {
-  .clean-member-img-wrapper {
-    img {
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-  }
-
-  .clean-testimonial-wrapper {
+  .news-list {
     text-align: center;
     position: relative;
     z-index: 5;
-  }
-
-  .new-list {
     overflow: hidden;
 
-    p {
-      font-size: 16px;
-      margin-bottom: 20px;
+    .news-item {
+      .news-img-wrapper {
+        img {
+          border-radius: 50%;
+          margin-bottom: 20px;
+        }
+      }
 
-      // 新闻来源
-      &.from {
-        font-size: 14px;
-        font-weight: 700;
-        margin-bottom: 0;
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
+
+        // 新闻来源
+        &.from {
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 0;
+        }
       }
     }
   }
-
 }
 
 

@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="images/favicon.png">
 
     <!-- jquery -->
-    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
 
     <!-- bootstrap -->
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -19,71 +19,56 @@
     <!-- font-awesome -->
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- 动画效果 -->
-    <link rel="stylesheet" href="css/animate.css">
-    <script src="js/wow.min.js"></script>
+    <!-- animate.css -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/wow/1.0.3/wow.min.js"></script>
 
     <!-- owl -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <script src="js/owl.carousel.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
+    <!-- Magnific Popup -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+
+    <!-- slider-pro -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/slider-pro/1.2.0/css/slider-pro.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/slider-pro/1.2.0/js/jquery.sliderPro.min.js"></script>
+
+    <!-- 响应式页面 -->
+    <link rel="stylesheet" href="css/responsive.css"/>
+
+    <!-- 兼容IE6 7 8 的h5标签 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/html5shiv/3.7.1/html5shiv.min.js"></script>
+
+    <!-- 兼容IE6 7 8 的css3样式 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+
+    <!-- 动过渡效果 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- jquery相关 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/scrollup/2.1.0/jquery.scrollUp.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+
+    <!-- isotope -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.min.js"></script>
 
     <!-- 自己的css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/enhance.css">
-    <link rel="stylesheet" href="css/color-green.css" id="colors"/>
-
-    <link rel="stylesheet" href="css/main.css">
-
+    <link id="colors" rel="stylesheet" href="css/color-green.css"/>
 
     <!-- 自己的js -->
     <script src="js/custom.js"></script>
-
-    <!-- ======================================================================= -->
-
-
-    <!-- ===================================
-        PLUGIN
-    ==================================== -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/slider-pro.css">
-
-
-    <!-- 页面css -->
-    <link rel="stylesheet" href="css/responsive.css"/>
-
-
-    <script src="js/html5shiv.min.js"></script>
-    <script src="js/respond.min.js"></script>
-    <script type="text/javascript" src="js/selectivizr-min.js"></script>
-
-    <script src="js/modernizr.min.js"></script>
-
-
-    <script src="js/jquery.easing.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/smooth-scroll.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.sliderPro.min.js"></script>
-
-    <script src="js/jquery.easypiechart.js"></script>
-    <script src="js/jquery.countTo.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-
-
-    <script src="js/jquery.nav.js"></script>
-
-
 </head>
 
 <body>
 <!-- 开始时候的动图 -->
-<!--<div class="preloader">-->
-<!--    <div class="status"></div>-->
-<!--</div>-->
+<div class="preloader">
+    <div class="status"></div>
+</div>
 
 <!-- 导航栏 -->
 <header>
@@ -267,14 +252,14 @@
     </div>
 
     <!-- 新闻列表 -->
-    <div class="clean-testimonial-wrapper wow bounceIn">
+    <div class=" wow bounceIn">
         <!-- 新闻列表 -->
-        <div id="clean-testimonial" class="row owl-carousel new-list">
+        <div id="clean-testimonial" class="news-list row owl-carousel">
 
             <!-- 单个新闻 -->
-            <div class="clean-testimonial-slides col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
-                <div class="clean-member-img-wrapper">
-                    <!-- 新闻封面 -->
+            <div class="news-item col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
+                <!-- 新闻封面 -->
+                <div class="news-img-wrapper">
                     <img src="images/testimonial/1.png" alt="Team Member 2">
                 </div>
                 <p>新闻详情....新闻详情....新闻详情....新闻详情....新闻详情....新闻详情....</p>
@@ -282,9 +267,9 @@
             </div>
 
             <!-- 单个新闻 -->
-            <div class="clean-testimonial-slides col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
-                <div class="clean-member-img-wrapper">
-                    <!-- 新闻封面 -->
+            <div class="news-item col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
+                <!-- 新闻封面 -->
+                <div class="news-img-wrapper">
                     <img src="images/testimonial/1.png" alt="Team Member 2">
                 </div>
                 <p>新闻详情....新闻详情....新闻详情....新闻详情....新闻详情....新闻详情....</p>
@@ -360,6 +345,9 @@
     <div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">
         <h1><span class="clean-color-contras">环保小知识</span></h1>
         <div class="clean-line"></div>
+        <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
+            <a href="">点击刷新</a>
+        </p>
     </div>
 
     <div class="container">
