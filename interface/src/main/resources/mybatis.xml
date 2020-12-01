@@ -30,6 +30,13 @@
 
     <!--指定sql映射文件的位置-->
     <mappers>
-
+        <mapper resource="com.mapper.comments.xml"/>
+        <mapper resource="com.mapper.holiday.xml"/>
+        <mapper resource="com.mapper.knowledge.xml"/>
+        <mapper resource="com.mapper.law.xml"/>
+        <mapper resource="com.mapper.news.xml"/>
+        <mapper resource="com.mapper.ucomment.xml"/>
+        <mapper resource="com.mapper.user.xml"/>
+        <mapper resource="com.mapper.video.xml"/>
     </mappers>
 </configuration>
