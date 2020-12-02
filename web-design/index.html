@@ -54,25 +54,26 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
 
     <!-- isotope -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.min.js"></script>
+<!--    <script src="https://cdn.bootcdn.net/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.min.js"></script>-->
 
     <!-- 自己的css -->
     <link rel="stylesheet" href="css/style.css">
     <link id="colors" rel="stylesheet" href="css/color-green.css"/>
 
     <!-- 自己的js -->
-    <script src="js/custom.js"></script>
+<!--    <script src="js/custom.js"></script>-->
+    <script src="js/index.js"></script>
 </head>
 
 <body>
 <!-- 开始时候的动图 -->
-<div class="preloader">
-    <div class="status"></div>
+<div id="loadingDiv" class="loading-div">
+    <div id="loading" class="loading"></div>
 </div>
 
 <!-- 导航栏 -->
 <header>
-    <nav class="navbar clean-main-menu" role="navigation">
+    <nav id="navbar" class="navbar" role="navigation">
         <div class="container">
 
             <!-- 折叠框 小屏幕可见 -->
@@ -89,7 +90,7 @@
             <div id="nav-menu" class="navbar-collapse collapse" role="navigation">
                 <ul class="nav navbar-nav clean-menu-wrapper">
                     <li class="active">
-                        <a href="#clean-slider">首页</a>
+                        <a href="#slider">首页</a>
                     </li>
                     <li>
                         <a href="#dynamic">环保动态</a>
@@ -118,15 +119,15 @@
 
 
 <!-- 首页轮播图 -->
-<section id="clean-slider" class="slider-pro clean-slider">
+<section id="slider" class="slider-pro">
     <div class="sp-slides">
         <!-- 一张轮播 -->
-        <div class="sp-slide clean-main-slides">
-            <div class="clean-img-overlay"></div>
+        <div class="sp-slide main-slides">
+            <div class="img-overlay"></div>
             <!-- 图片 -->
-            <img class="sp-image" src="images/slider/3.jpg" alt="Slider 1"/>
+            <img class="sp-image" src="images/slider/3.jpg" alt=""/>
             <!-- 上面的大字 -->
-            <h1 class="sp-layer clean-slider-text-big" data-position="center" data-show-transition="right"
+            <h1 class="sp-layer slider-text-big" data-position="center" data-show-transition="right"
                 data-hide-transition="right" data-show-delay="1500"
                 data-hide-delay="200">
                 <span class="clean-color-contras">绿色的</span>
@@ -141,12 +142,12 @@
         </div>
 
         <!-- 一张轮播 -->
-        <div class="sp-slide clean-main-slides">
-            <div class="clean-img-overlay"></div>
+        <div class="sp-slide main-slides">
+            <div class="img-overlay"></div>
             <!-- 图片 -->
-            <img class="sp-image" src="images/slider/2.jpg" alt="Slider 1"/>
+            <img class="sp-image" src="images/slider/2.jpg" alt=""/>
             <!-- 上面的大字 -->
-            <h1 class="sp-layer clean-slider-text-big" data-position="center" data-show-transition="right"
+            <h1 class="sp-layer slider-text-big" data-position="center" data-show-transition="right"
                 data-hide-transition="right" data-show-delay="1500"
                 data-hide-delay="200">
                 <span class="clean-color-contras">绿色的</span>
@@ -161,12 +162,12 @@
         </div>
 
         <!-- 一张轮播 -->
-        <div class="sp-slide clean-main-slides">
-            <div class="clean-img-overlay"></div>
+        <div class="sp-slide main-slides">
+            <div class="img-overlay"></div>
             <!-- 图片 -->
-            <img class="sp-image" src="images/slider/1.jpg" alt="Slider 1"/>
+            <img class="sp-image" src="images/slider/1.jpg" alt=""/>
             <!-- 上面的大字 -->
-            <h1 class="sp-layer clean-slider-text-big" data-position="center" data-show-transition="right"
+            <h1 class="sp-layer slider-text-big" data-position="center" data-show-transition="right"
                 data-hide-transition="right" data-show-delay="1500"
                 data-hide-delay="200">
                 <span class="clean-color-contras">绿色的</span>
@@ -254,7 +255,7 @@
     <!-- 新闻列表 -->
     <div class=" wow bounceIn">
         <!-- 新闻列表 -->
-        <div id="clean-testimonial" class="news-list row owl-carousel">
+        <div id="news-list" class="news-list row owl-carousel">
 
             <!-- 单个新闻 -->
             <div class="news-item col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">

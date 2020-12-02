@@ -25,7 +25,7 @@ body ul {
   margin-bottom: 0;
 }
 /* =================↓ 加载动画 ↓================= */
-.preloader {
+.loading-div {
   position: fixed;
   top: 0;
   left: 0;
@@ -37,9 +37,9 @@ body ul {
   width: 100%;
   overflow: hidden !important;
 }
-.preloader .status {
-  width: 128px;
-  height: 128px;
+.loading-div .loading {
+  width: 312px;
+  height: 170px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -118,7 +118,7 @@ body a:active {
   border: 0;
 }
 /* =================↓ 导航栏菜单 ↓================= */
-.clean-main-menu {
+.navbar {
   background-color: transparent;
   border: 0 none;
   border-radius: 0;
@@ -132,14 +132,14 @@ body a:active {
   -o-transition: all 0.35s;
   transition: all 0.35s;
 }
-.clean-main-menu .navbar-brand {
+.navbar .navbar-brand {
   padding: 30px 0;
 }
-.clean-main-menu .navbar-nav {
+.navbar .navbar-nav {
   float: right;
   padding: 30px 0;
 }
-.clean-main-menu .navbar-nav li a {
+.navbar .navbar-nav li a {
   color: #333333;
   font-size: 13px;
   font-weight: 700;
@@ -152,34 +152,35 @@ body a:active {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.clean-main-menu .navbar-nav li a:hover {
+.navbar .navbar-nav li a:hover {
   background-color: transparent;
 }
-.clean-main-menu .navbar-nav li a:focus {
+.navbar .navbar-nav li a:focus {
   background-color: transparent;
 }
-.clean-main-menu .navbar-nav li.active a {
+.navbar .navbar-nav li.active a {
   background-color: transparent;
+  color: #7CD552;
 }
-.clean-main-menu.minified {
+.navbar.minified {
   background-color: #ffffff;
   padding: 0;
   position: fixed;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 }
 /* =================↓ 轮播图 ↓================= */
-.clean-slider {
+#slider {
   overflow: hidden;
   background-color: #28292e;
 }
-.clean-slider .sp-buttons {
+#slider .sp-buttons {
   padding-top: 10px;
   position: absolute;
   text-align: center;
   width: 0;
   bottom: 20px;
 }
-.clean-slider .sp-buttons .sp-button {
+#slider .sp-buttons .sp-button {
   border: 1px solid #fff;
   border-radius: 50%;
   box-sizing: border-box;
@@ -189,11 +190,11 @@ body a:active {
   margin: 4px;
   width: 14px;
 }
-.clean-slider .sp-arrow {
+#slider .sp-arrow {
   width: 10px;
   height: 100px !important;
 }
-.clean-slider .clean-main-slides .clean-img-overlay {
+#slider .main-slides .img-overlay {
   position: absolute;
   background-color: rgba(218, 218, 234, 0.42);
   width: 100%;
@@ -203,18 +204,14 @@ body a:active {
   left: 0;
   right: 0;
 }
-.clean-slider .clean-main-slides h1.clean-slider-text-big {
+#slider .main-slides h1.slider-text-big {
   font-size: 48px;
   color: #ffffff;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 25px;
 }
-.clean-slider .clean-main-slides .clean-slider-text h1 span {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-.clean-slider .clean-main-slides p {
+#slider .main-slides p {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 30px !important;
