@@ -156,6 +156,7 @@ body a:active {
 }
 .navbar .navbar-nav li a:hover {
   background-color: transparent;
+  color: #7CD552;
 }
 .navbar .navbar-nav li a:focus {
   background-color: transparent;
@@ -220,42 +221,40 @@ body a:active {
   color: #ffffff;
   margin-bottom: 0;
 }
-/* 标题下面的横线 */
-.short-line {
+/* =================↓ section的样式 ↓================= */
+.section-wrapper {
+  padding: 80px 0;
+  overflow: hidden;
+}
+.section-wrapper .section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.section-wrapper .section-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #313131;
+}
+.section-wrapper .section-header h1 span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+.section-wrapper .section-header h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #313131;
+}
+.section-wrapper .section-header p {
+  font-family: 'Raleway', sans-serif;
+}
+.section-wrapper .section-header .short-line {
   width: 100px;
   height: 1px;
   margin: 20px auto;
   background: #7CD552;
-}
-/* =================↓ section的样式 ↓================= */
-.clean-section-wrapper {
-  padding: 80px 0;
-  overflow: hidden;
-  /* section中的标题 */
-}
-.clean-section-wrapper .clean-section-header {
-  text-align: center;
-  margin-bottom: 80px;
-}
-.clean-section-wrapper .clean-section-header h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  color: #313131;
-}
-.clean-section-wrapper .clean-section-header h1 span {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-}
-.clean-section-wrapper .clean-section-header h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  color: #313131;
-}
-.clean-section-wrapper .clean-section-header p {
-  font-family: 'Raleway', sans-serif;
 }
 /* =================↓ 环保动态 ↓================= */
 #dynamic .dynamic-list .dynamic-item {
