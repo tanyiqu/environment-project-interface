@@ -2,16 +2,20 @@ package com.object;
 
 public class comments {
     private Integer commentId;
-    private String commentName;
+    private String commentTxt;
     private String commentDate;
+    private String commemtObject;
+    private String userCount;
 
     public comments() {
     }
 
-    public comments(Integer commentId, String commentName, String commentDate) {
+    public comments(Integer commentId, String commentTxt, String commentDate, String commemtObject, String userCount) {
         this.commentId = commentId;
-        this.commentName = commentName;
+        this.commentTxt = commentTxt;
         this.commentDate = commentDate;
+        this.commemtObject = commemtObject;
+        this.userCount = userCount;
     }
 
     public Integer getCommentId() {
@@ -22,12 +26,12 @@ public class comments {
         this.commentId = commentId;
     }
 
-    public String getCommentName() {
-        return commentName;
+    public String getCommentTxt() {
+        return commentTxt;
     }
 
-    public void setCommentName(String commentName) {
-        this.commentName = commentName;
+    public void setCommentTxt(String commentTxt) {
+        this.commentTxt = commentTxt;
     }
 
     public String getCommentDate() {
@@ -38,12 +42,30 @@ public class comments {
         this.commentDate = commentDate;
     }
 
+    public String getCommemtObject() {
+        return commemtObject;
+    }
+
+    public void setCommemtObject(String commemtObject) {
+        this.commemtObject = commemtObject;
+    }
+
+    public String getUserCount() {
+        return userCount;
+    }
+
+    public void setUserCount(String userCount) {
+        this.userCount = userCount;
+    }
+
     @Override
     public String toString() {
         return "comments{" +
                 "commentId=" + commentId +
-                ", commentName='" + commentName + '\'' +
+                ", commentTxt='" + commentTxt + '\'' +
                 ", commentDate='" + commentDate + '\'' +
+                ", commemtObject='" + commemtObject + '\'' +
+                ", userCount='" + userCount + '\'' +
                 '}';
     }
 }

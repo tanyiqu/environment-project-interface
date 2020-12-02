@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="79972e95-aade-4fac-b2c9-68b2f72d4a3c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/knowledgeCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/knowledgeCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/lawCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/lawCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/newsCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/newsCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interfaces/lawDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/lawDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/commentCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/commentCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ucommentCon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/interfaces/commentsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/commentsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/interfaces/ucommentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/ucomment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/object/comments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/object/comments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/object/ucomment.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +48,7 @@
         <item name="web-design@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="web-design: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="knowledge: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="comments: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -177,6 +180,7 @@
       <workItem from="1606884534981" duration="2169000" />
       <workItem from="1606893435819" duration="843000" />
       <workItem from="1606894347506" duration="2748000" />
+      <workItem from="1606909593484" duration="3497000" />
     </task>
     <task id="LOCAL-00001" summary="object">
       <created>1606742909565</created>
@@ -263,14 +267,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="759" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606723722792" />
-    <state x="1141" y="403" key="#com.intellij.ide.util.MemberChooser" timestamp="1606804348091">
+    <state x="1141" y="403" key="#com.intellij.ide.util.MemberChooser" timestamp="1606909744252">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1141" y="403" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1606804348091" />
-    <state x="998" y="194" key="CommitChangelistDialog2" timestamp="1606896539140">
+    <state x="1141" y="403" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1606909744252" />
+    <state x="893" y="474" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606909615594">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="998" y="194" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1606896539140" />
+    <state x="893" y="474" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606909615594" />
+    <state x="774" y="216" key="CommitChangelistDialog2" timestamp="1606897279273">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="774" y="216" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1606897279273" />
     <state x="1011" y="468" key="FileChooserDialogImpl" timestamp="1606895730777">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

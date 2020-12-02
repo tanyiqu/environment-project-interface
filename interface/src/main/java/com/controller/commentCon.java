@@ -1,4 +1,83 @@
 package com.controller;
 
+import com.interfaces.commentsDao;
+import com.object.comments;
+import com.result.Result;
+import com.utils.myUtils;
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
+
+@Controller
 public class commentCon {
+    private Result result=new Result();
+    private String objectName="评论";
+
+    @RequestMapping(value="/selectComments",
+    method={RequestMethod.GET}
+    )
+    @ResponseBody
+    public Result selectComments(String type){
+        SqlSession session=new myUtils().getSession();
+        commentsDao dao=session.getMapper(commentsDao.class);
+        if(type!=null){
+            try{
+                List<comments> comments = dao.selectAllComments_type(type);
+                result.setSelects(comments,objectName);
+            }catch(Exception e){
+                session.close();
+                result.setExcept("selectComments");
+            };
+        }else{
+            result.setExcept("selectComments");
+        }
+        session.close();
+        return result;
+    }
+
+    @RequestMapping(value="/insertComments")
+    @ResponseBody
+    public Result insertComments(comments comments){
+        SqlSession session=new myUtils().getSession_Auto();
+        commentsDao dao=session.getMapper(commentsDao.class);
+        try{
+            Integer integer = dao.insertComments(comments);
+            result.setInsert(integer,objectName,comments);
+        }catch(Exception e){
+            session.close();
+            result.setExcept("insertComments");
+        };
+        session.close();
+        return result;
+    }
+
+    @RequestMapping(value="/deletComments")
+    @ResponseBody
+    public Result insertComments(String type,String oid){
+        SqlSession session=new myUtils().getSession_Auto();
+        commentsDao dao=session.getMapper(commentsDao.class);
+        try{
+            if(type.equals("user")){
+                Integer integer = dao.deleteComments_uid(oid);
+                result.setDelete(integer,objectName,oid);
+            }else if(type.equals("comment")){
+                Integer integer = dao.deleteComments_cid(Integer.parseInt(oid));
+                result.setDelete(integer,objectName,oid);
+            }else{
+                result.setStatus(404);
+                result.setData("error: type.value"+type);
+            }
+        }
+        catch(Exception e){
+            session.close();
+            result.setExcept("insertComments");
+        };
+        session.close();
+        return result;
+    }
+
 }
