@@ -10,6 +10,11 @@ public interface lawDao {
     @Select("select * from law;")
     List<law> selectAllLaw();
 
+    @Select("select * from law order by rand() limit 0,#{length}")
+    List<law> selectAllLaw_R(
+            @Param("length") Integer length
+    );
+
     @Insert("insert into law values(#{lawName},#{lawUrl});")
     Integer insertLaw(law law);
 

@@ -70,5 +70,5 @@ public class knowledgeCon {
         session.close();
         return result;
     }
-    
+
 }

@@ -1,6 +1,8 @@
 package com.controller;
 
+import com.interfaces.knowledgeDao;
 import com.interfaces.lawDao;
+import com.object.knowledge;
 import com.object.law;
 import com.result.Result;
 import com.utils.myUtils;
@@ -14,17 +16,29 @@ import java.util.List;
 
 @Controller
 public class lawCon {
+    private String objectName="法律";
+    private Result result=new Result();
 
 
+    @RequestMapping("/selectAllLaw")
     @ResponseBody
-    @RequestMapping(value="/selectAllLaw",
-        method={RequestMethod.GET})
-    public Result selectAllLaw(){
-        Result result=new Result();
+    public Result selectKnowledges(String type, Integer length){
         SqlSession session=new myUtils().getSession();
         lawDao dao=session.getMapper(lawDao.class);
-        List<law> laws = dao.selectAllLaw();
-        result.setSelects(laws,"法律");
+        try{
+            if (type==null){
+                List<law> laws = dao.selectAllLaw();
+                result.setSelects(laws,objectName);
+            }else if(type.equals("r")&& length!=null){
+                List<law> laws = dao.selectAllLaw_R(length);
+                result.setSelects(laws,objectName);
+            }else{
+                result.setStatus(400);
+                result.setData("链接参数错误");
+            }
+        }catch(Exception e){
+            result.setExcept("selectKnowledges");
+        }
         session.close();
         return result;
     }
@@ -33,12 +47,12 @@ public class lawCon {
     @RequestMapping(value="/deleteLaw",
             method={RequestMethod.GET})
     public Result deleteLaw(int lawId){
-        Result result=new Result();
+
         SqlSession session=new myUtils().getSession();
         lawDao dao=session.getMapper(lawDao.class);
         try{
             Integer integer = dao.deleteLaw(lawId);
-            result.setDelete(integer,"法律",String.valueOf(lawId));
+            result.setDelete(integer,objectName,String.valueOf(lawId));
         }catch(Exception e){
             result.setExcept("deleteLaw");
         }
@@ -50,12 +64,12 @@ public class lawCon {
     @RequestMapping(value="/insertLaw",
             method={RequestMethod.GET})
     public Result insertLaw(law law){
-        Result result=new Result();
+
         SqlSession session=new myUtils().getSession();
         lawDao dao=session.getMapper(lawDao.class);
         try{
             Integer integer = dao.insertLaw(law);
-            result.setInsert(integer,"法律",law);
+            result.setInsert(integer,objectName,law);
         }catch(Exception e){
             result.setExcept("deleteLaw");
         }

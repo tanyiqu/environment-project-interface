@@ -16,6 +16,7 @@ import java.util.List;
 public class newsCon {
 
     private Result result=new Result();
+    private String objectName="新闻";
 
     @RequestMapping("selectNews")
     @ResponseBody
@@ -25,10 +26,10 @@ public class newsCon {
         try{
             if (type==null){
                 List<news> news = dao.selectAllNews();
-                result.setSelects(news,"新闻");
+                result.setSelects(news,objectName);
             }else if(type.equals("r")&& length!=null){
                 List<news> news = dao.selectRandomNews(length);
-                result.setSelects(news,"新闻");
+                result.setSelects(news,objectName);
             }else{
                 result.setStatus(400);
                 result.setData("链接参数错误");
@@ -48,7 +49,7 @@ public class newsCon {
         newsDao dao=session.getMapper(newsDao.class);
         try{
             Integer integer = dao.insertNews(news);
-            result.setInsert(integer,"新闻",news);
+            result.setInsert(integer,objectName,news);
         }catch(Exception e){
             result.setExcept("insertNews");
         }
@@ -64,7 +65,7 @@ public class newsCon {
         newsDao dao=session.getMapper(newsDao.class);
         try {
             Integer integer = dao.deleteNews(newsId);
-            result.setDelete(integer,"新闻",String.valueOf(newsId));
+            result.setDelete(integer,objectName,String.valueOf(newsId));
         }catch(Exception e){
             result.setExcept("deleteNews");
         }
