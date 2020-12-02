@@ -2,6 +2,15 @@
  * 页面通用样式
  */
 
+@colorPrimary: #7CD552;
+
+.primary-color {
+  color: @colorPrimary;
+}
+
+.primary-background {
+  background: @colorPrimary;
+}
 
 /* =================↓ 通用 ↓================= */
 * {
@@ -271,90 +280,12 @@ body {
 }
 
 
-/* =================↓ 图标 ↓================= */
-/* 横排的图标 */
-.clean-blurb-round-icon {
-  .clean-icon {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 30px;
-    text-align: center;
-    border: 8px solid #dadada;
-    border-radius: 50%;
-    line-height: 0;
-    padding: 8px;
-    -webkit-transition: all .35s linear;
-    -moz-transition: all .35s linear;
-    -o-transition: all .35s linear;
-    transition: all .35s linear;
-
-    i {
-      line-height: 70px;
-      font-size: 36px;
-      color: #dadada;
-    }
-  }
-
-  &:hover {
-    .clean-icon {
-      border: 1px solid rgba(0, 0, 0, 0);
-
-      i {
-        color: #ffffff;
-      }
-    }
-  }
-
-  h3 {
-    text-align: center;
-    font-size: 18px;
-    color: #616161;
-    margin-top: 0;
-    margin-bottom: 15px;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
-  }
-
-  p {
-    margin-bottom: 0;
-    text-align: center;
-  }
-}
-
-/* 竖排的图标 */
-.clean-blurb-icon-only {
-  margin-bottom: 50px;
-  text-align: center;
-
-  i {
-    font-size: 30px;
-    border-radius: 50%;
-    border: 4px solid #eee;
-    padding: 30px;
-
-    &:hover {
-      background-color: #fff;
-    }
-  }
-
-  h3 {
-    font-size: 16px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-  }
-
-  p {
-    margin-bottom: 0;
-  }
-}
-
 /* 标题下面的横线 */
-.clean-line {
+.short-line {
   width: 100px;
   height: 1px;
   margin: 20px auto;
+  background: @colorPrimary;
 }
 
 
@@ -364,7 +295,6 @@ body {
   overflow: hidden;
 
   /* section中的标题 */
-
   .clean-section-header {
     text-align: center;
     margin-bottom: 80px;
@@ -391,6 +321,65 @@ body {
 
     p {
       font-family: 'Raleway', sans-serif;
+    }
+  }
+}
+
+
+/* =================↓ 环保动态 ↓================= */
+#dynamic {
+  // 动态列表
+  .dynamic-list {
+    // 单个动态
+    .dynamic-item {
+      text-align: center;
+
+      .dynamic-icon {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 30px;
+        text-align: center;
+        border: 8px solid #dadada;
+        border-radius: 50%;
+        line-height: 0;
+        padding: 8px;
+        -webkit-transition: all .35s linear;
+        -moz-transition: all .35s linear;
+        -o-transition: all .35s linear;
+        transition: all .35s linear;
+
+        i {
+          line-height: 70px;
+          font-size: 36px;
+          color: #dadada;
+        }
+
+        &:hover {
+          border: 1px solid rgba(0, 0, 0, 0);
+          background: @colorPrimary;
+
+          i {
+            color: #ffffff;
+          }
+        }
+      }
+
+      h3 {
+        text-align: center;
+        font-size: 18px;
+        color: #616161;
+        margin-top: 0;
+        margin-bottom: 15px;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+      }
+
+      p {
+        margin-bottom: 0;
+        text-align: center;
+      }
     }
   }
 }
@@ -459,17 +448,54 @@ body {
 }
 
 
+/* =================↓ 环保小知识 ↓================= */
+#knowledge {
+  // 列表
+  .knowledge-list {
+    // 单个小知识
+    .knowledge-item {
+      margin-bottom: 50px;
+      text-align: center;
+
+      i {
+        font-size: 30px;
+        border-radius: 50%;
+        border: 4px solid #eee;
+        padding: 30px;
+        color: @colorPrimary;
+
+        &:hover {
+          color: #fff;
+          background: @colorPrimary;
+        }
+      }
+
+      h3 {
+        font-size: 16px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        color: @colorPrimary;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
 /* =================↓ footer ↓================= */
 footer {
   background-color: #28292e;
   padding: 60px;
   overflow: hidden;
 
-  .clean-footer-content {
+  .footer-content {
     text-align: center;
   }
 
-  .clean-footer-logo {
+  .footer-logo {
     text-align: center;
     margin-bottom: 20px;
   }
