@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="79972e95-aade-4fac-b2c9-68b2f72d4a3c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/holidayCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/holidayCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/newsCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/newsCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interfaces/holidayDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/holidayDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/holiday.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/holiday.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/knowledgeCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/knowledgeCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/interfaces/knowledgeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interfaces/knowledgeDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +43,7 @@
         <item name="web-design@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="web-design: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="holiday: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="knowledge: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -111,7 +109,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/HR_mange" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -176,6 +174,7 @@
       <workItem from="1606825431932" duration="6734000" />
       <workItem from="1606884534981" duration="2169000" />
       <workItem from="1606893435819" duration="843000" />
+      <workItem from="1606894347506" duration="2075000" />
     </task>
     <task id="LOCAL-00001" summary="object">
       <created>1606742909565</created>
@@ -226,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606885870501</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="holiday">
+      <created>1606894391457</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606894391457</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +245,8 @@
     <MESSAGE value="2020-12-01" />
     <MESSAGE value="videoCon&amp;videoDao" />
     <MESSAGE value="video" />
-    <option name="LAST_COMMIT_MESSAGE" value="video" />
+    <MESSAGE value="holiday" />
+    <option name="LAST_COMMIT_MESSAGE" value="holiday" />
   </component>
   <component name="WindowStateProjectService">
     <state x="759" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606723722792">
@@ -250,14 +257,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1141" y="403" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1606804348091" />
-    <state x="998" y="194" key="CommitChangelistDialog2" timestamp="1606885869031">
+    <state x="998" y="194" key="CommitChangelistDialog2" timestamp="1606894390030">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="998" y="194" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1606885869031" />
-    <state x="1011" y="468" key="FileChooserDialogImpl" timestamp="1606814419072">
+    <state x="998" y="194" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1606894390030" />
+    <state x="1011" y="468" key="FileChooserDialogImpl" timestamp="1606895730777">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1011" y="468" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1606814419072" />
+    <state x="1011" y="468" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1606895730777" />
     <state width="1848" height="288" key="GridCell.Tab.0.bottom" timestamp="1606817268454">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -278,6 +285,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="754" y="458" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1606894277512" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1606895030427">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1606895030427" />
     <state x="1231" y="365" key="spring file set editor" timestamp="1606812660176">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
