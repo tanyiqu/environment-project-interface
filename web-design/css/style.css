@@ -37,24 +37,20 @@ body ul {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fefefe;
+  background: #fefefe;
   z-index: 99999;
   height: 100%;
   width: 100%;
   overflow: hidden !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .loading-div .loading {
   width: 312px;
   height: 170px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background-image: url(../images/preloader.gif);
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
+  background: url(../images/loading.gif) no-repeat center;
   background-size: cover;
-  margin: -70px 0 0 -70px;
 }
 /* =================↓ 两种背景色 ↓================= */
 body .background-one {
