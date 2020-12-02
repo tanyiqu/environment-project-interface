@@ -1,6 +1,12 @@
 /**
  * 页面通用样式
  */
+.primary-color {
+  color: #7CD552;
+}
+.primary-background {
+  background: #7CD552;
+}
 /* =================↓ 通用 ↓================= */
 * {
   margin: 0;
@@ -25,30 +31,26 @@ body ul {
   margin-bottom: 0;
 }
 /* =================↓ 加载动画 ↓================= */
-.preloader {
+.loading-div {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fefefe;
+  background: #fefefe;
   z-index: 99999;
   height: 100%;
   width: 100%;
   overflow: hidden !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.preloader .status {
-  width: 128px;
-  height: 128px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background-image: url(../images/preloader.gif);
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
+.loading-div .loading {
+  width: 312px;
+  height: 170px;
+  background: url(../images/loading.gif) no-repeat center;
   background-size: cover;
-  margin: -70px 0 0 -70px;
 }
 /* =================↓ 两种背景色 ↓================= */
 body .background-one {
@@ -118,7 +120,7 @@ body a:active {
   border: 0;
 }
 /* =================↓ 导航栏菜单 ↓================= */
-.clean-main-menu {
+.navbar {
   background-color: transparent;
   border: 0 none;
   border-radius: 0;
@@ -132,14 +134,14 @@ body a:active {
   -o-transition: all 0.35s;
   transition: all 0.35s;
 }
-.clean-main-menu .navbar-brand {
+.navbar .navbar-brand {
   padding: 30px 0;
 }
-.clean-main-menu .navbar-nav {
+.navbar .navbar-nav {
   float: right;
   padding: 30px 0;
 }
-.clean-main-menu .navbar-nav li a {
+.navbar .navbar-nav li a {
   color: #333333;
   font-size: 13px;
   font-weight: 700;
@@ -152,34 +154,36 @@ body a:active {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.clean-main-menu .navbar-nav li a:hover {
+.navbar .navbar-nav li a:hover {
+  background-color: transparent;
+  color: #7CD552;
+}
+.navbar .navbar-nav li a:focus {
   background-color: transparent;
 }
-.clean-main-menu .navbar-nav li a:focus {
+.navbar .navbar-nav li.active a {
   background-color: transparent;
+  color: #7CD552;
 }
-.clean-main-menu .navbar-nav li.active a {
-  background-color: transparent;
-}
-.clean-main-menu.minified {
+.navbar.minified {
   background-color: #ffffff;
   padding: 0;
   position: fixed;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 }
 /* =================↓ 轮播图 ↓================= */
-.clean-slider {
+#slider {
   overflow: hidden;
   background-color: #28292e;
 }
-.clean-slider .sp-buttons {
+#slider .sp-buttons {
   padding-top: 10px;
   position: absolute;
   text-align: center;
   width: 0;
   bottom: 20px;
 }
-.clean-slider .sp-buttons .sp-button {
+#slider .sp-buttons .sp-button {
   border: 1px solid #fff;
   border-radius: 50%;
   box-sizing: border-box;
@@ -189,11 +193,11 @@ body a:active {
   margin: 4px;
   width: 14px;
 }
-.clean-slider .sp-arrow {
+#slider .sp-arrow {
   width: 10px;
   height: 100px !important;
 }
-.clean-slider .clean-main-slides .clean-img-overlay {
+#slider .main-slides .img-overlay {
   position: absolute;
   background-color: rgba(218, 218, 234, 0.42);
   width: 100%;
@@ -203,27 +207,60 @@ body a:active {
   left: 0;
   right: 0;
 }
-.clean-slider .clean-main-slides h1.clean-slider-text-big {
+#slider .main-slides h1.slider-text-big {
   font-size: 48px;
   color: #ffffff;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 25px;
 }
-.clean-slider .clean-main-slides .clean-slider-text h1 span {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-.clean-slider .clean-main-slides p {
+#slider .main-slides p {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 30px !important;
   color: #ffffff;
   margin-bottom: 0;
 }
-/* =================↓ 图标 ↓================= */
-/* 横排的图标 */
-.clean-blurb-round-icon .clean-icon {
+/* =================↓ section的样式 ↓================= */
+.section-wrapper {
+  padding: 80px 0;
+  overflow: hidden;
+}
+.section-wrapper .section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.section-wrapper .section-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #313131;
+}
+.section-wrapper .section-header h1 span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+.section-wrapper .section-header h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #313131;
+}
+.section-wrapper .section-header p {
+  font-family: 'Raleway', sans-serif;
+}
+.section-wrapper .section-header .short-line {
+  width: 100px;
+  height: 1px;
+  margin: 20px auto;
+  background: #7CD552;
+}
+/* =================↓ 环保动态 ↓================= */
+#dynamic .dynamic-list .dynamic-item {
+  text-align: center;
+}
+#dynamic .dynamic-list .dynamic-item .dynamic-icon {
   width: 100px;
   height: 100px;
   margin: 0 auto 30px;
@@ -237,18 +274,19 @@ body a:active {
   -o-transition: all 0.35s linear;
   transition: all 0.35s linear;
 }
-.clean-blurb-round-icon .clean-icon i {
+#dynamic .dynamic-list .dynamic-item .dynamic-icon i {
   line-height: 70px;
   font-size: 36px;
   color: #dadada;
 }
-.clean-blurb-round-icon:hover .clean-icon {
+#dynamic .dynamic-list .dynamic-item .dynamic-icon:hover {
   border: 1px solid rgba(0, 0, 0, 0);
+  background: #7CD552;
 }
-.clean-blurb-round-icon:hover .clean-icon i {
+#dynamic .dynamic-list .dynamic-item .dynamic-icon:hover i {
   color: #ffffff;
 }
-.clean-blurb-round-icon h3 {
+#dynamic .dynamic-list .dynamic-item h3 {
   text-align: center;
   font-size: 18px;
   color: #616161;
@@ -259,67 +297,9 @@ body a:active {
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.clean-blurb-round-icon p {
+#dynamic .dynamic-list .dynamic-item p {
   margin-bottom: 0;
   text-align: center;
-}
-/* 竖排的图标 */
-.clean-blurb-icon-only {
-  margin-bottom: 50px;
-  text-align: center;
-}
-.clean-blurb-icon-only i {
-  font-size: 30px;
-  border-radius: 50%;
-  border: 4px solid #eee;
-  padding: 30px;
-}
-.clean-blurb-icon-only i:hover {
-  background-color: #fff;
-}
-.clean-blurb-icon-only h3 {
-  font-size: 16px;
-  margin-top: 25px;
-  margin-bottom: 15px;
-}
-.clean-blurb-icon-only p {
-  margin-bottom: 0;
-}
-/* 标题下面的横线 */
-.clean-line {
-  width: 100px;
-  height: 1px;
-  margin: 20px auto;
-}
-/* =================↓ section的样式 ↓================= */
-.clean-section-wrapper {
-  padding: 80px 0;
-  overflow: hidden;
-  /* section中的标题 */
-}
-.clean-section-wrapper .clean-section-header {
-  text-align: center;
-  margin-bottom: 80px;
-}
-.clean-section-wrapper .clean-section-header h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  color: #313131;
-}
-.clean-section-wrapper .clean-section-header h1 span {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-}
-.clean-section-wrapper .clean-section-header h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  color: #313131;
-}
-.clean-section-wrapper .clean-section-header p {
-  font-family: 'Raleway', sans-serif;
 }
 /* =================↓ 环保新闻 ↓================= */
 #news .news-list {
@@ -357,16 +337,41 @@ body a:active {
   height: 350px;
   background: #7CD552;
 }
+/* =================↓ 环保小知识 ↓================= */
+#knowledge .knowledge-list .knowledge-item {
+  margin-bottom: 50px;
+  text-align: center;
+}
+#knowledge .knowledge-list .knowledge-item i {
+  font-size: 30px;
+  border-radius: 50%;
+  border: 4px solid #eee;
+  padding: 30px;
+  color: #7CD552;
+}
+#knowledge .knowledge-list .knowledge-item i:hover {
+  color: #fff;
+  background: #7CD552;
+}
+#knowledge .knowledge-list .knowledge-item h3 {
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #7CD552;
+}
+#knowledge .knowledge-list .knowledge-item p {
+  margin-bottom: 0;
+}
 /* =================↓ footer ↓================= */
 footer {
   background-color: #28292e;
   padding: 60px;
   overflow: hidden;
 }
-footer .clean-footer-content {
+footer .footer-content {
   text-align: center;
 }
-footer .clean-footer-logo {
+footer .footer-logo {
   text-align: center;
   margin-bottom: 20px;
 }
