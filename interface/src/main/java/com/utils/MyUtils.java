@@ -23,7 +23,7 @@ public class MyUtils {
             e.printStackTrace();
         }
     }
-    public static SqlSession getSession(){
+    public SqlSession getSession(){
         return sessionFactory.openSession();
     }
 

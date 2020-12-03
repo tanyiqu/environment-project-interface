@@ -25,7 +25,7 @@ public class videoCon {
 //    @Test
     public Result selectAllVideo(){
         Result result=new Result();
-        SqlSession session=MyUtils.getSession();
+        SqlSession session=new MyUtils().getSession();
         videoDao dao=session.getMapper(videoDao.class);
         try{
             List<video> videos = dao.selectAllVideo();
