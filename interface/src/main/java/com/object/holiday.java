@@ -3,16 +3,16 @@ package com.object;
 public class holiday {
     private Integer holidayId;
     private String holidayName;
-    private String holidDate;
+    private String holidayDate;
     private String holidayReason;
 
     public holiday() {
     }
 
-    public holiday(Integer holidayId, String holidayName, String holidDate, String holidayReason) {
+    public holiday(Integer holidayId, String holidayName, String holidayDate, String holidayReason) {
         this.holidayId = holidayId;
         this.holidayName = holidayName;
-        this.holidDate = holidDate;
+        this.holidayDate = holidayDate;
         this.holidayReason = holidayReason;
     }
 
@@ -32,12 +32,12 @@ public class holiday {
         this.holidayName = holidayName;
     }
 
-    public String getHolidDate() {
-        return holidDate;
+    public String getHolidayDate() {
+        return holidayDate;
     }
 
-    public void setHolidDate(String holidDate) {
-        this.holidDate = holidDate;
+    public void setHolidayDate(String holidayDate) {
+        this.holidayDate = holidayDate;
     }
 
     public String getHolidayReason() {
@@ -53,7 +53,7 @@ public class holiday {
         return "holiday{" +
                 "holidayId=" + holidayId +
                 ", holidayName='" + holidayName + '\'' +
-                ", holidDate='" + holidDate + '\'' +
+                ", holidayDate='" + holidayDate + '\'' +
                 ", holidayReason='" + holidayReason + '\'' +
                 '}';
     }

@@ -60,7 +60,7 @@ public class lawCon {
 
     @ResponseBody
     @RequestMapping(value="/insertLaw",
-            method={RequestMethod.GET})
+            method={RequestMethod.GET,RequestMethod.POST})
     public Result insertLaw(law law){
 
         SqlSession session=new MyUtils().getSession();
