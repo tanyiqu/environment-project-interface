@@ -21,7 +21,7 @@
 | 功能   | 用户添加                                                     |
 | :----- | ------------------------------------------------------------ |
 | url    | http://120.26.163.105/interface/insertUser                   |
-| method | GET、POS                                                     |
+| method | GET、POST                                                    |
 | args   | userCount（用户账号）<br />userName（用户名）<br />passwd（用户密码） |
 
 ### 用户删除
@@ -66,7 +66,7 @@
 
 | 功能   | 知识查询                                                     |
 | :----- | ------------------------------------------------------------ |
-| url    | http://120.26.163.105/interface/selectKnowledges             |
+| url    | http://120.26.163.105/interface/selectAllKnowledge           |
 | method | GET                                                          |
 | args   | type: r \| null （查询方式）<br />length（type=r时有用，控制数据量） |
 
@@ -171,3 +171,29 @@
 | host   | http://120.26.163.105/interface/updateVideo                  |
 | method | GET、POST                                                    |
 | args   | videoId（视频Id）<br />videoName（视频名称）<br />videoUrl（视频链接） |
+
+# 评论
+
+### 查询评论
+
+| 功能   | 查询评论                                                     |
+| :----- | ------------------------------------------------------------ |
+| host   | http://120.26.163.105/interface/selectComments               |
+| method | GET                                                          |
+| args   | type：news \| holiday <br />           \| knowledge \| law \| video <br />（评论对象） |
+
+### 添加评论
+
+| 功能   | 添加评论                                                     |
+| :----- | ------------------------------------------------------------ |
+| host   | http://120.26.163.105/interface/insertComments               |
+| method | GET、POST                                                    |
+| args   | commentTxt（评论内容）<br />commentDate（评论时间  template:yyyy-MM-dd hh:mm:ss）<br />userCount（评论用户账号）<br />commentObject：news \| holiday<br />                                 \| konwledge \| law \| video（评论对象） |
+
+### 删除评论
+
+| 功能   | 删除评论                                                     |
+| :----- | ------------------------------------------------------------ |
+| host   | http://120.26.163.105/interface/deleteComments               |
+| method | GET                                                          |
+| args   | type：user \| comment  （删除方式）<br />oid：（type=user，oid为用户账号）<br />         （type=comment，oid为评论Id） |

@@ -33,13 +33,15 @@ public class commentCon {
                 result.setExcept("selectComments");
             }
         }else{
-            result.setExcept("selectComments");
+            result.setData("请求参数错误");
+            result.setStatus(401);
         }
         session.close();
         return result;
     }
 
-    @RequestMapping(value="/insertComments")
+    @RequestMapping(value="/insertComments",
+            method={RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
     public Result insertComments(comments comments){
         SqlSession session=new MyUtils().getSession_Auto();
