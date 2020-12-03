@@ -17,17 +17,11 @@ import java.util.Map;
 public class userCon {
     private String objectName="用户";
     private Result result=new Result();
-    /**
-     * 用户登录
-     * @param userCount
-     * @param passwd
-     * @return
-     */
+
     @RequestMapping(value="/login",
             method={RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
     public Result selectUser(String userCount,String passwd){
-//        Result result=new Result();
         SqlSession session=new MyUtils().getSession();
         userDao dao=session.getMapper(userDao.class);
         user user = dao.selectUser(userCount);
@@ -54,7 +48,6 @@ public class userCon {
     )
     @ResponseBody
     public Result insertUser(user user){
-//        Result result=new Result();
         SqlSession session=new MyUtils().getSession_Auto();
         userDao dao = session.getMapper(userDao.class);
         Integer integer = dao.insertUser(user);
@@ -66,7 +59,6 @@ public class userCon {
     @RequestMapping(value="/updateUser")
     @ResponseBody
     public Result updateUser(user user){
-//        Result result=new Result();
         SqlSession session=new MyUtils().getSession_Auto();
         userDao dao = session.getMapper(userDao.class);
         Integer integer = dao.updateUser(user);

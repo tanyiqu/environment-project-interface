@@ -15,7 +15,7 @@ import java.util.List;
 @Controller
 public class newsCon {
 
-    private Result result;
+    private Result result=new Result();
     private String objectName="新闻";
 
     @RequestMapping("/selectNews")

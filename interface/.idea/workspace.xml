@@ -8,8 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="79972e95-aade-4fac-b2c9-68b2f72d4a3c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/newsCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/newsCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/userCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/userCon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/videoCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/videoCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/MyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/MyUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -349,7 +350,7 @@
       <workItem from="1606962876170" duration="4668000" />
       <workItem from="1606970630903" duration="6327000" />
       <workItem from="1606994165234" duration="3257000" />
-      <workItem from="1606997785206" duration="141000" />
+      <workItem from="1606997785206" duration="337000" />
     </task>
     <task id="LOCAL-00001" summary="object">
       <created>1606742909565</created>
@@ -435,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606977424917</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="v_1.0.2">
+      <created>1606997980951</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606997980951</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +461,8 @@
     <MESSAGE value="comment" />
     <MESSAGE value="数据库" />
     <MESSAGE value="v_1.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="v_1.0.1" />
+    <MESSAGE value="v_1.0.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="v_1.0.2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="684" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606917754378">
@@ -468,10 +477,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="893" y="474" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606909615594" />
-    <state x="774" y="216" key="CommitChangelistDialog2" timestamp="1606977421879">
+    <state x="795" y="215" key="CommitChangelistDialog2" timestamp="1606997979626">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="774" y="216" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1606977421879" />
+    <state x="795" y="215" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1606997979626" />
     <state x="1011" y="468" key="FileChooserDialogImpl" timestamp="1606977727229">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

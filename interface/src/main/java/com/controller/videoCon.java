@@ -5,7 +5,6 @@ import com.object.video;
 import com.result.Result;
 import com.utils.MyUtils;
 import org.apache.ibatis.session.SqlSession;
-import org.junit.jupiter.api.Test;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,7 +21,6 @@ public class videoCon {
     @ResponseBody
     @RequestMapping(value="/selectAllVideo",
             method={RequestMethod.GET})
-//    @Test
     public Result selectAllVideo(){
         Result result=new Result();
         SqlSession session=new MyUtils().getSession();
@@ -48,7 +46,7 @@ public class videoCon {
             result.setInsert(integer,objectName,video);
         }catch(Exception e){
             result.setExcept("insertVideo");
-        };
+        }
         session.close();
         return result;
     }
@@ -81,7 +79,7 @@ public class videoCon {
                     String.valueOf(video.getVideoId()));
         }catch(Exception e){
             result.setExcept("updateVideo");
-        };
+        }
         session.close();
         return result;
     }
