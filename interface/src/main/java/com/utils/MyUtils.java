@@ -18,7 +18,6 @@ public class MyUtils {
             InputStream inputStream= Resources.getResourceAsStream(mybatis);
             SqlSessionFactoryBuilder sessionFactoryBuilder=new SqlSessionFactoryBuilder();
             sessionFactory= sessionFactoryBuilder.build(inputStream);
-            System.out.println("sessionFactory");
         } catch (IOException e) {
             e.printStackTrace();
         }

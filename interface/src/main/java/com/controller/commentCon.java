@@ -31,7 +31,7 @@ public class commentCon {
             }catch(Exception e){
                 session.close();
                 result.setExcept("selectComments");
-            };
+            }
         }else{
             result.setExcept("selectComments");
         }
@@ -50,7 +50,7 @@ public class commentCon {
         }catch(Exception e){
             session.close();
             result.setExcept("insertComments");
-        };
+        }
         session.close();
         return result;
     }
@@ -75,7 +75,7 @@ public class commentCon {
         catch(Exception e){
             session.close();
             result.setExcept("insertComments");
-        };
+        }
         session.close();
         return result;
     }

@@ -5,18 +5,22 @@ import com.object.knowledge;
 import com.result.Result;
 import com.utils.MyUtils;
 import org.apache.ibatis.session.SqlSession;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
+@Controller
 public class knowledgeCon {
     private Result result=new Result();
     private String objectName="知识";
-    @RequestMapping("/selectKnowledges")
+
     @ResponseBody
-    public Result selectKnowledges(String type, Integer length){
+    @RequestMapping(value="/selectAllKnowledge",
+            method={RequestMethod.GET})
+    public Result selectKnowledge(String type, Integer length){
         SqlSession session=new MyUtils().getSession();
         knowledgeDao dao=session.getMapper(knowledgeDao.class);
         try{

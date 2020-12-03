@@ -4,17 +4,17 @@ public class comments {
     private Integer commentId;
     private String commentTxt;
     private String commentDate;
-    private String commemtObject;
+    private String commentObject;
     private String userCount;
 
     public comments() {
     }
 
-    public comments(Integer commentId, String commentTxt, String commentDate, String commemtObject, String userCount) {
+    public comments(Integer commentId, String commentTxt, String commentDate, String commentObject, String userCount) {
         this.commentId = commentId;
         this.commentTxt = commentTxt;
         this.commentDate = commentDate;
-        this.commemtObject = commemtObject;
+        this.commentObject = commentObject;
         this.userCount = userCount;
     }
 
@@ -42,12 +42,12 @@ public class comments {
         this.commentDate = commentDate;
     }
 
-    public String getCommemtObject() {
-        return commemtObject;
+    public String getCommentObject() {
+        return commentObject;
     }
 
-    public void setCommemtObject(String commemtObject) {
-        this.commemtObject = commemtObject;
+    public void setCommentObject(String commentObject) {
+        this.commentObject = commentObject;
     }
 
     public String getUserCount() {
@@ -64,7 +64,7 @@ public class comments {
                 "commentId=" + commentId +
                 ", commentTxt='" + commentTxt + '\'' +
                 ", commentDate='" + commentDate + '\'' +
-                ", commemtObject='" + commemtObject + '\'' +
+                ", commentObject='" + commentObject + '\'' +
                 ", userCount='" + userCount + '\'' +
                 '}';
     }

@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface commentsDao {
 
-//    @Select("select * from comments where commentObject=#{commentObject}")
+    @Select("select * from comments where commentObject=#{commentObject}")
     List<comments> selectAllComments_type(
            @Param("commentObject") String type
     );
