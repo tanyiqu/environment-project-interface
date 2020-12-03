@@ -3,7 +3,7 @@ package com.controller;
 import com.interfaces.newsDao;
 import com.object.news;
 import com.result.Result;
-import com.utils.myUtils;
+import com.utils.MyUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,13 +15,13 @@ import java.util.List;
 @Controller
 public class newsCon {
 
-    private Result result=new Result();
+    private Result result;
     private String objectName="新闻";
 
-    @RequestMapping("selectNews")
+    @RequestMapping("/selectNews")
     @ResponseBody
     public Result selectNews(String type,Integer length){
-        SqlSession session=new myUtils().getSession();
+        SqlSession session=new MyUtils().getSession();
         newsDao dao=session.getMapper(newsDao.class);
         try{
             if (type==null){
@@ -45,7 +45,7 @@ public class newsCon {
     @RequestMapping(value="/insertNews",
             method={RequestMethod.POST,RequestMethod.GET})
     public Result insertNews(news news){
-        SqlSession session=new myUtils().getSession_Auto();
+        SqlSession session=new MyUtils().getSession_Auto();
         newsDao dao=session.getMapper(newsDao.class);
         try{
             Integer integer = dao.insertNews(news);
@@ -61,7 +61,7 @@ public class newsCon {
     @RequestMapping(value="/deleteNews",
             method={RequestMethod.POST,RequestMethod.GET})
     public Result deleteNews(Integer newsId){
-        SqlSession session=new myUtils().getSession_Auto();
+        SqlSession session=new MyUtils().getSession_Auto();
         newsDao dao=session.getMapper(newsDao.class);
         try {
             Integer integer = dao.deleteNews(newsId);

@@ -8,13 +8,13 @@ import java.util.List;
 @Mapper
 public interface videoDao {
 
-    @Select("select * from video")
+//    @Select("select * from video")
     List<video> selectAllVideo();
 
-    @Insert("insert into video values(#{videoName},#{videoUrl})")
+//    @Insert("insert into video values(#{videoName},#{videoUrl})")
     Integer insertVideo(video video);
 
-    @Delete("delete from video where videoId=#{videoId}")
+//    @Delete("delete from video where videoId=#{videoId}")
     Integer deleteVideo(
             @Param("videoId") Integer videoId
     );

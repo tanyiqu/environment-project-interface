@@ -1,11 +1,9 @@
 package com.controller;
 
-import com.interfaces.holidayDao;
 import com.interfaces.knowledgeDao;
-import com.object.holiday;
 import com.object.knowledge;
 import com.result.Result;
-import com.utils.myUtils;
+import com.utils.MyUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,7 +17,7 @@ public class knowledgeCon {
     @RequestMapping("/selectKnowledges")
     @ResponseBody
     public Result selectKnowledges(String type, Integer length){
-        SqlSession session=new myUtils().getSession();
+        SqlSession session=new MyUtils().getSession();
         knowledgeDao dao=session.getMapper(knowledgeDao.class);
         try{
             if (type==null){
@@ -43,7 +41,7 @@ public class knowledgeCon {
     @RequestMapping(value="/insertKnowledge",
             method={RequestMethod.POST,RequestMethod.GET})
     public Result insertKnowledge(knowledge knowledge){
-        SqlSession session=new myUtils().getSession_Auto();
+        SqlSession session=new MyUtils().getSession_Auto();
         knowledgeDao dao=session.getMapper(knowledgeDao.class);
         try{
             Integer integer = dao.insertKnowledge(knowledge);
@@ -59,7 +57,7 @@ public class knowledgeCon {
     @RequestMapping(value="/deleteKnowledge",
             method={RequestMethod.POST,RequestMethod.GET})
     public Result deleteKnowledge(Integer knowledgeId){
-        SqlSession session=new myUtils().getSession_Auto();
+        SqlSession session=new MyUtils().getSession_Auto();
         knowledgeDao dao=session.getMapper(knowledgeDao.class);
         try{
             Integer integer = dao.deleteKnowledge(knowledgeId);

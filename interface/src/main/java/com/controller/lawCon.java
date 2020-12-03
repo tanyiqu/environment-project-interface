@@ -1,11 +1,9 @@
 package com.controller;
 
-import com.interfaces.knowledgeDao;
 import com.interfaces.lawDao;
-import com.object.knowledge;
 import com.object.law;
 import com.result.Result;
-import com.utils.myUtils;
+import com.utils.MyUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,7 +21,7 @@ public class lawCon {
     @RequestMapping("/selectAllLaw")
     @ResponseBody
     public Result selectKnowledges(String type, Integer length){
-        SqlSession session=new myUtils().getSession();
+        SqlSession session=new MyUtils().getSession();
         lawDao dao=session.getMapper(lawDao.class);
         try{
             if (type==null){
@@ -48,7 +46,7 @@ public class lawCon {
             method={RequestMethod.GET})
     public Result deleteLaw(int lawId){
 
-        SqlSession session=new myUtils().getSession();
+        SqlSession session=new MyUtils().getSession();
         lawDao dao=session.getMapper(lawDao.class);
         try{
             Integer integer = dao.deleteLaw(lawId);
@@ -65,7 +63,7 @@ public class lawCon {
             method={RequestMethod.GET})
     public Result insertLaw(law law){
 
-        SqlSession session=new myUtils().getSession();
+        SqlSession session=new MyUtils().getSession();
         lawDao dao=session.getMapper(lawDao.class);
         try{
             Integer integer = dao.insertLaw(law);

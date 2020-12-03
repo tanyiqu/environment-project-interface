@@ -3,7 +3,7 @@ package com.controller;
 import com.interfaces.userDao;
 import com.object.user;
 import com.result.Result;
-import com.utils.myUtils;
+import com.utils.MyUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +15,8 @@ import java.util.Map;
 
 @Controller
 public class userCon {
+    private String objectName="用户";
+    private Result result=new Result();
     /**
      * 用户登录
      * @param userCount
@@ -25,13 +27,13 @@ public class userCon {
             method={RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
     public Result selectUser(String userCount,String passwd){
-        SqlSession session=new myUtils().getSession();
+//        Result result=new Result();
+        SqlSession session=new MyUtils().getSession();
         userDao dao=session.getMapper(userDao.class);
         user user = dao.selectUser(userCount);
-        Result result=new Result();
         Map<String,String> map=new HashMap<>();
         if(user!=null){
-            if (user.getUserPasswd()==passwd){
+            if (user.getUserPasswd().equals(passwd)){
                 result.setStatus(200);
                 map.put("info","密码正确");
             }else{
@@ -47,28 +49,41 @@ public class userCon {
         return result;
     }
 
-
-    @RequestMapping(value="/userUpdate")
+    @RequestMapping(value="/insertUser",
+        method={RequestMethod.POST,RequestMethod.GET}
+    )
     @ResponseBody
-    public Result updateUser(user user){
-        Result result=new Result();
-        SqlSession session=new myUtils().getSession_Auto();
+    public Result insertUser(user user){
+//        Result result=new Result();
+        SqlSession session=new MyUtils().getSession_Auto();
         userDao dao = session.getMapper(userDao.class);
-        Integer integer = dao.updateUser(user);
-        result.setUpdate(integer,"用户",user.getUserCount());
+        Integer integer = dao.insertUser(user);
+        result.setUpdate(integer,objectName,user.getUserCount());
         session.close();
         return result;
     }
 
-    @RequestMapping(value="/userDelete",
+    @RequestMapping(value="/updateUser")
+    @ResponseBody
+    public Result updateUser(user user){
+//        Result result=new Result();
+        SqlSession session=new MyUtils().getSession_Auto();
+        userDao dao = session.getMapper(userDao.class);
+        Integer integer = dao.updateUser(user);
+        result.setUpdate(integer,objectName,user.getUserCount());
+        session.close();
+        return result;
+    }
+
+    @RequestMapping(value="/deleteUser",
             method={RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
     public Result userDelete(String userCount){
         Result result=new Result();
-        SqlSession session=new myUtils().getSession_Auto();
+        SqlSession session=new MyUtils().getSession_Auto();
         userDao dao=session.getMapper(userDao.class);
         Integer integer = dao.deleteUser(userCount);
-        result.setDelete(integer,"用户",userCount);
+        result.setDelete(integer,objectName,userCount);
         session.close();
         return result;
     }

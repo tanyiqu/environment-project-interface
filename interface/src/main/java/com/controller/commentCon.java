@@ -3,7 +3,7 @@ package com.controller;
 import com.interfaces.commentsDao;
 import com.object.comments;
 import com.result.Result;
-import com.utils.myUtils;
+import com.utils.MyUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,7 +22,7 @@ public class commentCon {
     )
     @ResponseBody
     public Result selectComments(String type){
-        SqlSession session=new myUtils().getSession();
+        SqlSession session=new MyUtils().getSession();
         commentsDao dao=session.getMapper(commentsDao.class);
         if(type!=null){
             try{
@@ -42,7 +42,7 @@ public class commentCon {
     @RequestMapping(value="/insertComments")
     @ResponseBody
     public Result insertComments(comments comments){
-        SqlSession session=new myUtils().getSession_Auto();
+        SqlSession session=new MyUtils().getSession_Auto();
         commentsDao dao=session.getMapper(commentsDao.class);
         try{
             Integer integer = dao.insertComments(comments);
@@ -58,7 +58,7 @@ public class commentCon {
     @RequestMapping(value="/deletComments")
     @ResponseBody
     public Result insertComments(String type,String oid){
-        SqlSession session=new myUtils().getSession_Auto();
+        SqlSession session=new MyUtils().getSession_Auto();
         commentsDao dao=session.getMapper(commentsDao.class);
         try{
             if(type.equals("user")){

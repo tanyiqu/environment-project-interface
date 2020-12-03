@@ -1,11 +1,9 @@
 package com.controller;
 
 import com.interfaces.holidayDao;
-import com.interfaces.newsDao;
 import com.object.holiday;
-import com.object.news;
 import com.result.Result;
-import com.utils.myUtils;
+import com.utils.MyUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +19,7 @@ public class holidayCon {
     @RequestMapping("/selectHolidays")
     @ResponseBody
     public Result selectHolidays(String type, Integer length){
-        SqlSession session=new myUtils().getSession();
+        SqlSession session=new MyUtils().getSession();
         holidayDao dao=session.getMapper(holidayDao.class);
         try{
             if (type==null){
@@ -45,7 +43,7 @@ public class holidayCon {
     @RequestMapping(value="/insertHoliday",
             method={RequestMethod.POST,RequestMethod.GET})
     public Result insertHoliday(holiday holiday){
-        SqlSession session=new myUtils().getSession_Auto();
+        SqlSession session=new MyUtils().getSession_Auto();
         holidayDao dao=session.getMapper(holidayDao.class);
         try{
             Integer integer = dao.insertHoliday(holiday);
@@ -61,7 +59,7 @@ public class holidayCon {
     @RequestMapping(value="/deleteHoliday",
             method={RequestMethod.POST,RequestMethod.GET})
     public Result deleteHoliday(Integer holidayId){
-        SqlSession session=new myUtils().getSession_Auto();
+        SqlSession session=new MyUtils().getSession_Auto();
         holidayDao dao=session.getMapper(holidayDao.class);
         try {
             Integer integer = dao.deleteHoliday(holidayId);

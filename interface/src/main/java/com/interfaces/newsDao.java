@@ -8,7 +8,7 @@ import java.util.List;
 @Mapper
 public interface newsDao {
 
-    @Select("select * from news;")
+    //@Select("select * from news;")
     List<news> selectAllNews();
 
     @Select("select * from news order by rand() limit 0,#{length};")

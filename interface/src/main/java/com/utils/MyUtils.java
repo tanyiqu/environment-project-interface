@@ -1,6 +1,5 @@
 package com.utils;
 
-import com.mysql.cj.xdevapi.SessionFactory;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -10,20 +9,21 @@ import java.io.IOException;
 import java.io.InputStream;
 
 
-public class myUtils {
+public class MyUtils {
+
     private static SqlSessionFactory sessionFactory;
     static{
         String mybatis="mybatis.xml";
         try {
             InputStream inputStream= Resources.getResourceAsStream(mybatis);
-            SqlSessionFactoryBuilder sessionFactoryBuilder=
-                    new SqlSessionFactoryBuilder();
+            SqlSessionFactoryBuilder sessionFactoryBuilder=new SqlSessionFactoryBuilder();
             sessionFactory= sessionFactoryBuilder.build(inputStream);
+            System.out.println("sessionFactory");
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    public SqlSession getSession(){
+    public static SqlSession getSession(){
         return sessionFactory.openSession();
     }
 
