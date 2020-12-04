@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -17,10 +19,11 @@ import java.util.regex.Pattern;
 public class reptilesCon {
     private Result result=new Result();
     private Reptiles reptiles=new Reptiles();
-    private final String  pattern="\\{.*?}";
+    private String  pattern="\\{.*?}";
+
     @ResponseBody
     @RequestMapping(value="/getData",method={RequestMethod.GET})
-    public Result getData(){
+    public Result get_Datas(){
         String html = reptiles.get_html();
         ObjectMapper mapper = new ObjectMapper();
         Pattern compile = Pattern.compile(pattern);
@@ -40,8 +43,8 @@ public class reptilesCon {
         return result;
     }
 
-  /*  @Test
-    public void getDatas() throws IOException {
+   /* @Test
+    public void getDatas_fun() throws IOException {
         String html = reptiles.get_html();
         ObjectMapper mapper = new ObjectMapper();
         Pattern compile = Pattern.compile(pattern);

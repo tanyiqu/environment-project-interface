@@ -36,6 +36,7 @@ public class commentCon {
             result.setData("请求参数错误");
             result.setStatus(401);
         }
+        System.out.println(result);
         session.close();
         return result;
     }

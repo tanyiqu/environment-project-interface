@@ -12,19 +12,48 @@
     <!--注解扫描-->
     <context:component-scan base-package="com.interfaces"/>
     <context:component-scan base-package="com.controller"/>
-    <context:component-scan base-package="com.result"/>
     <context:component-scan base-package="com.utils"/>
 
+<!--    <context:annotation-config/>-->
+
     <!--视图解析器-->
-    <bean id="internalResourceViewResolver"
+    <!--<bean id="internalResourceViewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/"/>
         <property name="suffix" value=".jsp"/>
-    </bean>
+    </bean>-->
 
 
     <!--开启SpringMVC注解支持-->
-    <mvc:annotation-driven/>
+    <mvc:annotation-driven>
+        <!--<mvc:message-converters register-defaults="true">
+            &lt;!&ndash; 配置Fastjson支持 &ndash;&gt;
+            <bean class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>application/json</value>
+                        <value>text/html;charset=UTF-8</value>
+                    </list>
+                </property>
+                &lt;!&ndash;				<property name="features">
+                                    <list>
+                                        <value>WriteMapNullValue</value>
+                                        <value>QuoteFieldNames</value>
+                                    </list>
+                                </property>&ndash;&gt;
+            </bean>
+        </mvc:message-converters>-->
+    </mvc:annotation-driven>
+
+    <bean id="contentNegotiationManager"
+          class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
+        <property name="mediaTypes">
+            <map>
+                <entry key="html" value="application/json;charset=UTF-8"/>
+            </map>
+        </property>
+    </bean>
+
     <!--资源放行-->
     <mvc:default-servlet-handler/>
 
