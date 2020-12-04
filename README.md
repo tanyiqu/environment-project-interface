@@ -197,3 +197,13 @@
 | host   | http://120.26.163.105/interface/deleteComments               |
 | method | GET                                                          |
 | args   | type：user \| comment  （删除方式）<br />oid：（type=user，oid为用户账号）<br />         （type=comment，oid为评论Id） |
+
+# 监测数据
+
+### 获取监测数据
+
+| 功能   | 删除评论                                |
+| :----- | --------------------------------------- |
+| host   | http://120.26.163.105/interface/getData |
+| method | GET                                     |
+| args   | 无                                      |
