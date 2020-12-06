@@ -9,9 +9,8 @@
     </select>
 
     <insert id="insertUser" parameterType="com.object.user">
-        insert into user values(#{userCount},#{userName},#{userPasswd});
+        insert into user values(#{userId},#{userCount},#{userName},#{userPasswd});
     </insert>
-
 
     <update id="updateUser">
         update user

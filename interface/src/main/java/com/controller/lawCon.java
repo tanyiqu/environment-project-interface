@@ -43,7 +43,7 @@ public class lawCon {
 
     @ResponseBody
     @RequestMapping(value="/deleteLaw",
-            method={RequestMethod.GET})
+            method={RequestMethod.GET,RequestMethod.POST})
     public Result deleteLaw(int lawId){
 
         SqlSession session=new MyUtils().getSession();

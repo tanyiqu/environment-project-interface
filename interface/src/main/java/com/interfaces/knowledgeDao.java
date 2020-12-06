@@ -16,7 +16,7 @@ public interface knowledgeDao {
     @Select("select * from knowledge order by rand() limit 0,#{length};")
     List<knowledge> selectAllKnowledge_R(Integer integer);
 
-    @Insert("insert into knoledge values(#{knowledgeName},#{knowledgeUrl});")
+    @Insert("insert into knoledge values(#{knowledgeId},#{knowledgeName},#{knowledgeUrl});")
     Integer insertKnowledge(knowledge knowledge);
 
     @Delete("delete from knowledge where knowledgeId=#{knowledgeId}")

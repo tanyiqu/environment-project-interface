@@ -27,7 +27,7 @@ public class newsCon {
             if (type==null){
                 List<news> news = dao.selectAllNews();
                 result.setSelects(news,objectName);
-            }else if(type.equals("r")&& length!=null){
+            }else if(type.equals("r") && length!=null){
                 List<news> news = dao.selectRandomNews(length);
                 result.setSelects(news,objectName);
             }else{

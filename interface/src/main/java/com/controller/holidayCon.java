@@ -16,7 +16,7 @@ import java.util.List;
 public class holidayCon {
     private Result result=new Result();
     private String objectName="节日";
-    @RequestMapping("/selectHolidays")
+    @RequestMapping(value="/selectHolidays",method={RequestMethod.GET})
     @ResponseBody
     public Result selectHolidays(String type, Integer length){
         SqlSession session=new MyUtils().getSession();

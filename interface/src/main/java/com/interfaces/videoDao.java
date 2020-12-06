@@ -11,7 +11,7 @@ public interface videoDao {
 //    @Select("select * from video")
     List<video> selectAllVideo();
 
-//    @Insert("insert into video values(#{videoName},#{videoUrl})")
+//    @Insert("insert into video values(#{videoId},#{videoName},#{videoUrl})")
     Integer insertVideo(video video);
 
 //    @Delete("delete from video where videoId=#{videoId}")
@@ -19,6 +19,10 @@ public interface videoDao {
             @Param("videoId") Integer videoId
     );
 
+    @Select("select * from video order by rand() limit 0,#{length};")
+    List<video> selectAllVideo_R(
+            @Param("length") Integer length
+    );
 
     Integer updateVideo(video video);
 }

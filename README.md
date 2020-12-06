@@ -109,7 +109,7 @@
 | 功能   | 法律删除                                  |
 | :----- | ----------------------------------------- |
 | host   | http://120.26.163.105/interface/deleteLaw |
-| method | GET                                       |
+| method | GET、POST                                 |
 | args   | lawId（法律Id）                           |
 
 # 新闻
@@ -128,7 +128,7 @@
 | :----- | ------------------------------------------------------------ |
 | host   | http://120.26.163.105/interface/insertNews                   |
 | method | GET、POST                                                    |
-| args   | newsName（新闻标题）<br />newsFace（新闻封面）<br />newsDate（新闻发布日期）<br />newsFrom（新闻发布机构名称）<br />newsUrl（此新闻链接）<br />newsAgencyUrl（新闻发布机构链接） |
+| args   | newsName（新闻标题、可无）<br />newsFace（新闻封面、可无）<br />newsDate（新闻发布日期、可无）<br />newsFrom（新闻发布机构名称、可无）<br />newsUrl（此新闻链接、可无）<br />newsAgencyUrl（新闻发布机构链接、可无） |
 
 ### 新闻删除
 
@@ -142,11 +142,11 @@
 
 ### 视频查询
 
-| 功能   | 视频查询                                       |
-| :----- | ---------------------------------------------- |
-| host   | http://120.26.163.105/interface/selectAllVideo |
-| method | GET                                            |
-| args   | null                                           |
+| 功能   | 视频查询                                                     |
+| :----- | ------------------------------------------------------------ |
+| host   | http://120.26.163.105/interface/selectAllVideo               |
+| method | GET                                                          |
+| args   | type：r \| null （查询方式）<br />length（type=r时有用，控制数据量） |
 
 ### 视频添加
 
@@ -161,7 +161,7 @@
 | 功能   | 视频删除                                    |
 | :----- | ------------------------------------------- |
 | host   | http://120.26.163.105/interface/deleteVideo |
-| method | GET                                         |
+| method | GET、POST                                   |
 | args   | videoId（视频Id）                           |
 
 ### 视频更新
@@ -195,14 +195,14 @@
 | 功能   | 删除评论                                                     |
 | :----- | ------------------------------------------------------------ |
 | host   | http://120.26.163.105/interface/deleteComments               |
-| method | GET                                                          |
+| method | GET、POST                                                    |
 | args   | type：user \| comment  （删除方式）<br />oid：（type=user，oid为用户账号）<br />         （type=comment，oid为评论Id） |
 
 # 监测数据
 
 ### 获取监测数据
 
-| 功能   | 删除评论                                |
+| 功能   | 获取监测数据                            |
 | :----- | --------------------------------------- |
 | host   | http://120.26.163.105/interface/getData |
 | method | GET                                     |

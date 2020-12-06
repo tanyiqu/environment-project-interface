@@ -21,13 +21,21 @@ public class videoCon {
     @ResponseBody
     @RequestMapping(value="/selectAllVideo",
             method={RequestMethod.GET})
-    public Result selectAllVideo(){
+    public Result selectAllVideo(String type,Integer length){
         Result result=new Result();
         SqlSession session=new MyUtils().getSession();
         videoDao dao=session.getMapper(videoDao.class);
         try{
-            List<video> videos = dao.selectAllVideo();
-            result.setSelects(videos,objectName);
+            if (type==null){
+                List<video> videos = dao.selectAllVideo();
+                result.setSelects(videos,objectName);
+            }else if(type.equals("r") &&length!=null){
+                List<video> videos = dao.selectAllVideo_R(length);
+                result.setSelects(videos,objectName);
+            }else{
+                result.setStatus(400);
+                result.setData("链接参数错误");
+            }
         }catch(Exception e){
             result.setExcept("selectAllVideo");
         }
@@ -53,7 +61,7 @@ public class videoCon {
 
     @ResponseBody
     @RequestMapping(value="/deleteVideo",
-            method={RequestMethod.GET})
+            method={RequestMethod.GET,RequestMethod.POST})
     public Result deleteVideo(Integer videoId){
         SqlSession session=new MyUtils().getSession_Auto();
         videoDao dao=session.getMapper(videoDao.class);

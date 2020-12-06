@@ -15,7 +15,7 @@ public interface commentsDao {
            @Param("commentObject") String type
     );
 
-    @Insert("insert into comments values(#{commentTxt},#{commentDate}," +
+    @Insert("insert into comments values(#{commentId},#{commentTxt},#{commentDate}," +
             "#{userCount},#{commentObject})")
     Integer insertComments(comments comments);
 

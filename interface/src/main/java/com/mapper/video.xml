@@ -8,7 +8,7 @@
     </select>
 
     <insert id="insertVideo" parameterType="com.object.video">
-        insert into video values(#{videoName},#{videoUrl});
+        insert into video values(#{videoId},#{videoName},#{videoUrl});
     </insert>
 
     <delete id="deleteVideo" >

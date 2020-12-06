@@ -15,7 +15,7 @@ public interface lawDao {
             @Param("length") Integer length
     );
 
-    @Insert("insert into law values(#{lawName},#{lawUrl});")
+    @Insert("insert into law values(#{lawId},#{lawName},#{lawUrl});")
     Integer insertLaw(law law);
 
     @Delete("delete from law where lawId=#{lawId};")

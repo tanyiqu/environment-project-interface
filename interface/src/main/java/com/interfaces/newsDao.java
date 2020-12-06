@@ -16,8 +16,9 @@ public interface newsDao {
             @Param("length") Integer length
     );
 
-    @Insert("insert into news values(#{newsName}," +
-            "#{newsFace},#{newsUrl},#{newsAgencyUrl})")
+
+    @Insert("insert into news values(#{newsId},#{newsName}," +
+            "#{newsFace},#{newsDate},#{newsFrom},#{newsUrl},#{newsAgencyUrl});")
     Integer insertNews(news news);
 
     @Delete("delete from news where newsId=#{newsId}")

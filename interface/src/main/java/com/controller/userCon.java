@@ -43,15 +43,21 @@ public class userCon {
         return result;
     }
 
+    @ResponseBody
     @RequestMapping(value="/insertUser",
         method={RequestMethod.POST,RequestMethod.GET}
     )
-    @ResponseBody
     public Result insertUser(user user){
         SqlSession session=new MyUtils().getSession_Auto();
         userDao dao = session.getMapper(userDao.class);
-        Integer integer = dao.insertUser(user);
-        result.setUpdate(integer,objectName,user.getUserCount());
+        try{
+            System.out.println(user.toString());
+            Integer integer = dao.insertUser(user);
+            result.setInsert(integer,objectName,user);
+        }catch(Exception e){
+            result.setExcept("insertUser");
+            e.printStackTrace();
+        }
         session.close();
         return result;
     }

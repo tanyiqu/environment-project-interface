@@ -16,8 +16,8 @@ public interface holidayDao {
             @Param("length") Integer length
     );
 
-    @Insert("insert into holiday values(#{holidayName}," +
-            "#{holidayDate},#{holidayDate},#{holidayReason});")
+    @Insert("insert into holiday values(#{holidayId},#{holidayName}," +
+            "#{holidayDate},#{holidayReason});")
     Integer insertHoliday(holiday holiday);
 
     @Delete("delete from holiday where holidayId=#{holidayId}")

@@ -58,7 +58,8 @@ public class commentCon {
         return result;
     }
 
-    @RequestMapping(value="/deletComments")
+    @RequestMapping(value="/deletComments",
+            method={RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
     public Result insertComments(String type,String oid){
         SqlSession session=new MyUtils().getSession_Auto();
