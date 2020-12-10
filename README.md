@@ -2,8 +2,7 @@
 
 网站设计比赛代码 - 后端接口
 
-[TOC]
-
+此仓库不再更新，请转至：https://gitee.com/web-design-hncj/web-design-interface
 
 
 # 用户
